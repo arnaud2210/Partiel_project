@@ -14,7 +14,6 @@
         <?php require_once('Navbar.php');?>
         <section>
         <div class="container">
-            <form action="" method="post">
                 <div class="row justify-content-center py-5">
                     <div class="col-5 bg-light">
                       <hr>

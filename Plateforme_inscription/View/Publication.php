@@ -11,7 +11,7 @@
     <title>Publication</title>
   </head>
   <body>
-    <?php require_once("Navbar.php") ?>
+    <?php require_once("Navgen.php") ?>
     <section class="header py-5">
     <h2 align="center">Récentes publications</h2><br>
       <div class="container">
@@ -31,7 +31,6 @@
           </div>
       </div>
 
-      
     </section>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>

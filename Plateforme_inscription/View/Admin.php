@@ -11,18 +11,17 @@
     <title>AdminConnexion</title>
   </head>
   <body>
-    <?php require_once("Navbar.php") ?>
+    <?php require_once("Navgen.php") ?>
     <section class="header py-5">
       <div class="container">
-        <form method="POST" action="">
+        <form method="POST" action="database/authentifier.php">
           <div class="row">
             <div class="col"></div>
             <div class="col bg-light">
               <hr>
-              <h2 align="center">Espace Administrateur</h2>
+              <h2 align="center">Connexion</h2>
               <hr>
               <div class="mb-3 py-5">
-                <label for="1" class="form-label"></label>
                 <input type="text" 
                        class="form-control" 
                        id="1"
@@ -32,7 +31,6 @@
                 >
               </div>
               <div class="mb-3">
-                <label for="2" class="form-label"></label>
                 <input type="password" 
                        class="form-control" 
                        id="2"
@@ -42,7 +40,7 @@
                 >
               </div>
               <div class="mb-3 py-5">
-                <button type="submit" class="form-control btn btn-success" formaction="Accueil.php">Se connecter</button>
+                <button type="submit" class="form-control btn btn-success">Se connecter</button>
               </div>
             </div>
             <div class="col"></div>

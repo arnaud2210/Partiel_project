@@ -11,8 +11,7 @@
     </head>
 
     <body>
-
-        <?php require_once('Navbar.php');?>
+        <?php require_once('Navgen.php');?>
         <section class="header text-center p-5">
             <div class="container">
                 <span>

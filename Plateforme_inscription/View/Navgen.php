@@ -25,7 +25,7 @@
                                 href="index.php">Présentation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="Publication.php">Communiqué</a>
+                            <a class="nav-link text-light" href=""></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="Classement.php"></a>

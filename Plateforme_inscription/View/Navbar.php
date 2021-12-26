@@ -25,7 +25,7 @@
                                 href="index.php">Présentation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="Publication.php">Communiqué</a>
+                            <a class="nav-link text-light" href="Publication.php">Publier</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="Classement.php">Rechercher</a>
@@ -34,7 +34,10 @@
 
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a href="Affichage.php" class="nav-link text-light">Voir Liste</a>
+                            <a href="Affichage.php" class="nav-link text-light">Candidatures</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Posts.php" class="nav-link text-light">Posts</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-warning " href="Formulaire.php">

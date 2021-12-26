@@ -5,14 +5,14 @@
 ?>
 <section class="note py-5">
       <div class="container">
-        <h2 align="center">LISTE DES CANDIDATURES</h2>
+        <caption align="center">LISTE DES CANDIDATURES</caption>
         <hr>
         <form method="POST" action="">
           <div class="row">
             <div class="col">
               <section class="">
                 <div>
-                  <table class="table table-hover table-bordered">
+                  <table class="table table-hover bg-light">
                   <thead>
                     <tr class="bg-warning">
                       <th scope="col">N°</th>

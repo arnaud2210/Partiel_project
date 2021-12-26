@@ -30,7 +30,7 @@
                     <div class="col">
                         <section class="">
                             <div>
-                    <table class="table table-hover table-bordered">
+                    <table class="table table-hover">
                     <thead>
                         <tr class="bg-warning">
                         <th scope="col">N°</th>

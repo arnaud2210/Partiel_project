@@ -12,7 +12,7 @@
 		{
 			session_start();
 			$_SESSION['niv'] = $user['niveau'];
-			header('location: ../Affichage.php');
+			header("location: ../assets/Dashboard.php");
 		}
 		else
 		{

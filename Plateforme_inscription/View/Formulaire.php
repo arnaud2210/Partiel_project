@@ -124,7 +124,7 @@
                           </div><br>
                           <div class="mb-3">
                             <button type="reset" class=" btn btn-warning" >Annuler</button>
-                            <button type="sumbit" class=" btn btn-success" data-bs-toggle="modal"
+                            <button type="button" class=" btn btn-success" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">Soumettre</button>
                             <div class="modal fade" id="exampleModal" tabindex="-1"
                                 aria-labelledby="exampleModalLabel"
@@ -138,7 +138,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="reset" class="btn btn-danger">Retour</button>
-                                            <button type="submit" class="btn btn-success" data-bs-dismiss="modal">
+                                            <button type="submit" class="btn btn-success" >
                                                 Continuer</button>
                                         </div>
                                     </div>

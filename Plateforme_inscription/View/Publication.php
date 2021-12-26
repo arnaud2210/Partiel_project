@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,26 +12,44 @@
     <title>Publication</title>
   </head>
   <body>
-    <?php require_once("Navgen.php") ?>
+    <?php require_once("Navbar.php") ?>
     <section class="header py-5">
-    <h2 align="center">Récentes publications</h2><br>
       <div class="container">
           <div class="row">
             <div class="col">
-                <div class="card" style="width: 18rem;">
+                <div class="card" >
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
+                        <hr>
+                        <h5 class="card-title">Ajouter une information</h5>
+                        <hr>
+                        <form action="database/poster.php?niveau=<?php echo $_SESSION['niv'];?>" method="post">
+                          <div class="form-floating mb-3">                           
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                id="exampleFormControlInput1"
+                                name="titre"
+                                required 
+                            >
+                            <label for="exampleFormControlInput1" class="form-label">Titre du texte</label>
+                          </div>
+                          <div class="form-floating mb-3">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" style="height: 100px" name="description" required></textarea>
+                            <label for="exampleFormControlTextarea1" class="form-label">Zone de texte</label>
+                          </div>
+                          <div class="mb-3">
+                              <button type="reset" class="btn btn-outline-warning">Annuler</button>
+                              <button type="submit" class="btn btn-outline-success">Poster</button>
+                          </div>
+                        </form>
                     </div>
                 </div>
             </div>
             <div class="col">
-                
+              <img id="r-7471311" data-claire-element-id="32137311" src="https://user.oc-static.com/upload/2021/09/30/16330109908118_P1C4%20E%CC%81crivez%20votre%20premier%20script.png" alt="">
             </div>
           </div>
       </div>
-
     </section>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>

@@ -26,11 +26,9 @@
 				$insert2->execute(array(htmlspecialchars($_POST['nom']), htmlspecialchars($_POST['prenom']),htmlspecialchars($_POST['naissance']), 
 								    htmlspecialchars($_POST['sexe']), htmlspecialchars($_POST['nationnalité']), htmlspecialchars($_POST['serie']), htmlspecialchars($_POST['bacsession'])));
 				header('location:../Formulaire.php');
-                echo "Enregistrement effectué avec succès";
 			} 
 			else 
 			{
-				header('location:../Formulaire.php');
-                echo "Erreur d'insertion";	
+				header('location:../Formulaire.php');	
 			}
 		}

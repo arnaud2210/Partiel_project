@@ -14,7 +14,7 @@
 
     <title>Posts</title>
   </head>
-  <body>
+  <body class="bg-light">
     <?php require_once("Navbar.php") ?>
     <section class="header py-5">
       <div class="container">
@@ -32,7 +32,7 @@
                     
                         <h5 class="card-title text-primary" align="center"><?php echo $post['titre']?></h5>
                         <hr>
-                        <p class="card-text"><em><?php echo $post['description']?></em></p>
+                        <p class="card-text"><?php echo $post['description']?></p>
                         <div class="mb-3" align="right">
                             <a class="btn btn-warning" href="Edition.php?idcontent=<?php echo $post['idcontent'];?>" id="edition">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">

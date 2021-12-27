@@ -80,7 +80,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main-page bg-success">
+            <section class="main-page bg-success bg-gradient">
                 <div class="container">
                     <div class="row h-100 justify-content-center
                         align-items-center">
@@ -102,7 +102,7 @@
                 </div>
             </section>
 
-            <section class="main-page bg-dark">
+            <section class="main-page bg-dark bg-gradient">
                 <div class="container">
                     <div class="row h-100 justify-content-center
                         align-items-center">

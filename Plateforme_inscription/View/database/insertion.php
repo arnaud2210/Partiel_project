@@ -16,9 +16,9 @@
 				
 				require_once('connexion.php');
 
-                $insert1 = $db->prepare('insert into fichier(nomfic) values(?)') or die($bdd->errorInfo());
+                		$insert1 = $db->prepare('insert into fichier(nomfic) values(?)') or die($bdd->errorInfo());
 
-                $insert1->execute(array($nom_fichier));
+                		$insert1->execute(array($nom_fichier));
 
 
 				$insert2 = $db->prepare('insert into candidat(nom, prenom, naissance, sexe, nationnalité, numserie, bacsession) values(?,?,?,?,?,?,?)') or die($bdd->errorInfo());

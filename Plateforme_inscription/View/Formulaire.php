@@ -116,6 +116,8 @@
                                    type="file" 
                                    id="formFile"
                                    value=""
+                                   accept=".pdf"
+                                   data-error="File is required."
                                    name="file"
                                    required
                             > 

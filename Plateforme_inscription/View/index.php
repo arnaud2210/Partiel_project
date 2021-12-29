@@ -1,3 +1,7 @@
+<?php session_start(); 
+    require('database/connexion.php');
+    $table = $db->query('select* FROM contenu');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -107,13 +111,18 @@
                     <div class="row h-100 justify-content-center
                         align-items-center">
                         <div class="col-lg-6">
-                            <h1 class="p-2 text-light">S'incrire à l'Institut</h1>
+                        <?php 
+                            while ($post = $table->fetch())
+                            { 
+                        ?>
+                            <h1 class="p-2 text-light"><?php echo $post['titre']?></h1>
                             <p class="p-2 text-light">
-                              L'inscription à l'institut est conditionnée. Le candidat est soumis à un concours et doit être titulaire d'un
-                              <strong>BAC</strong> série <strong>C, D, E, F2</strong>. A la réussite de ce concours, le candidat peut s'inscrire
-                              alors en 1ère année. La durée de formation est de 3 ans. Veuillez cliquez <a class="link-warning" href="http://"><strong><em>ici</em></strong></a> pour plus
-                                d'informations sur le concours.
+                                <?php echo $post['description']?>
                             </p>
+                        <?php
+                            }  
+                            $table->closeCursor();
+                        ?>
                             <form class="p-3">
                                 <div class="input-group mb-3">
                                     <input type="email" class="form-control"

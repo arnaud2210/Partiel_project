@@ -84,12 +84,12 @@
                     </div>
                 </div>
             </section>
-            <section class="main-page bg-success bg-gradient">
+            <section class="main-page bg-dark">
                 <div class="container">
                     <div class="row h-100 justify-content-center
                         align-items-center">
                         <div class="col-lg-6">
-                            <h1 class="p-2 text-dark">Formation IAI-TOGO</h1>
+                            <h1 class="p-2 text-light">Formation IAI-TOGO</h1>
                             <p class="p-2 text-light">
                                 L'<strong>IAI-TOGO</strong> est ouvert depuis 2002 et forme en trois (3) ans des ingénieurs des travaux informatiques
                                 dans trois filières: <strong>Génie Logiciel et Système d'Information (GLSI)</strong>, <strong>l'Administration Système & Réseaux (ASR)</strong> et 
@@ -100,7 +100,7 @@
                             </p>
                         </div>
                         <div class="col-lg-6">
-                        <img id="r-7317321" data-claire-element-id="31793701" src="https://user.oc-static.com/upload/2021/06/30/1625047097001_P1C3-1%20code%20modulaire%20avec%20les%20composants%20JSX%20%282%29.png" alt="">
+                            <img src="assets/img/etude.jpg" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                             }  
                             $table->closeCursor();
                         ?>
-                            <form class="p-3">
+                            <!--form class="p-3">
                                 <div class="input-group mb-3">
                                     <input type="email" class="form-control"
                                         placeholder="Adresse email"
@@ -132,7 +132,7 @@
                                     <button class="input-group-text btn
                                         btn-primary" formaction="Formulaire.php">S'inscrire</button>
                                 </div>
-                            </form>
+                            </form-->
                         </div>
                         
                     </div>

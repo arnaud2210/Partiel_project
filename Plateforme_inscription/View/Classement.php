@@ -23,7 +23,7 @@
         <div class="container">
         <section class="note py-5">
             <div class="container">
-             <h2 align="center">LISTE DES CANDIDATURES</h2>
+             <caption align="center">RECHERCHER UNE CANDIDATURE</caption>
             <hr>
             <form method="POST" action="">
                 <div class="row">

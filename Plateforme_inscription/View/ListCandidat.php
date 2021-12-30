@@ -5,7 +5,7 @@
 ?>
 <section class="note py-5">
       <div class="container">
-        <caption align="center">LISTE DES CANDIDATURES</caption>
+        <h2 align="center">LISTE DES CANDIDATURES</h2>
         <hr>
         <form method="POST" action="">
           <div class="row">

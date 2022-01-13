@@ -19,6 +19,9 @@
         <section>
         <div class="container">
                 <div class="row justify-content-center py-5">
+                    <div class="col-6">
+                      <img id="r-7471291" data-claire-element-id="32137261" src="https://user.oc-static.com/upload/2021/09/30/16330109529464_P1C3%20Pre%CC%81parez%20votre%20environnement%20de%20travail.png" alt="">                                                 
+                    </div>
                     <div class="col-5 bg-light">
                       <hr>
                       <h3 align="center">Fiche d'inscription</h3>
@@ -83,9 +86,25 @@
                               <label for="exampleFormControlInput1" class="form-label"></label>
                               <select class="form-select" aria-label="Default select example" required name="nationnalité">
                                   <option>-- Votre nationalité --</option>
-                                  <option value="Togo">Togo</option>
-                                  <option value="Gabon">Gabon</option>
-                                  <option value="Senegal">Senegal</option>
+                                  <option 
+                                    value="<?php 
+                                                exec('python extract.py', $coutries);  
+                                                foreach ($countries as $country) {
+                                                    # code...
+                                                    echo "</option>".$country."</option>";
+                                                }
+                                            ?>"
+                                  >
+                                    <?php 
+                                        exec("python extract.py", $countries); 
+                                        foreach ($countries as $country) {
+                                            # code...
+                                            echo "<option>".$country."</option>";
+                                        }
+                                    ?>
+                                  </option>
+                                  <!--option value="Gabon">Gabon</option>
+                                  <option value="Senegal">Senegal</option-->
                               </select>
                           </div>
                           <div class="mb-3">
@@ -148,9 +167,6 @@
                             </div>
                           </div>
                         </form>
-                    </div>
-                    <div class="col-6">
-                      <img id="r-7471291" data-claire-element-id="32137261" src="https://user.oc-static.com/upload/2021/09/30/16330109529464_P1C3%20Pre%CC%81parez%20votre%20environnement%20de%20travail.png" alt="">                                                 
                     </div>
                   </div>   
           </div>

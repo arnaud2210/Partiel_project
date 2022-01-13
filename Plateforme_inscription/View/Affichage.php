@@ -14,8 +14,9 @@
     <?php 
         require_once("Navbar.php");
     ?>
+    <div class="container p-2" align="right">Mise à jour : <?php echo date('h:i') ?></div> 
+  
     <section class="header">
-        <div class="container">
           <?php require_once("ListCandidat.php") ?>
         </div>  
     </section>

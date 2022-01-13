@@ -10,7 +10,7 @@
 
     <title>AdminConnexion</title>
   </head>
-  <body>
+  <body style="background-image: url('assets/img/logo.png');">
     <?php require_once("Navgen.php") ?>
     <section class="header py-5">
       <div class="container">

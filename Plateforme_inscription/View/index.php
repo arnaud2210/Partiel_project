@@ -106,23 +106,19 @@
                 </div>
             </section>
 
+            <?php 
+                while ($post = $table->fetch())
+                { 
+            ?>
             <section class="main-page bg-dark bg-gradient">
                 <div class="container">
                     <div class="row h-100 justify-content-center
                         align-items-center">
                         <div class="col-lg-6">
-                        <?php 
-                            while ($post = $table->fetch())
-                            { 
-                        ?>
                             <h1 class="p-2 text-light"><?php echo $post['titre']?></h1>
                             <p class="p-2 text-light">
                                 <?php echo $post['description']?>
                             </p>
-                        <?php
-                            }  
-                            $table->closeCursor();
-                        ?>
                             <!--form class="p-3">
                                 <div class="input-group mb-3">
                                     <input type="email" class="form-control"
@@ -134,25 +130,26 @@
                                 </div>
                             </form-->
                         </div>
-                        
                     </div>
                 </div>
             </section>
+            <?php
+                }  
+                $table->closeCursor();
+            ?>
 
             <!-- Option 1: Bootstrap Bundle with Popper -->
             <script
                 src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
-                crossorigin="anonymous"></script>
+                crossorigin="anonymous">
+            </script>
 
             <script type="text/javascript">
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-    </script>
-        </body>
-
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                    return new bootstrap.Tooltip(tooltipTriggerEl)
+                })
+            </script>
     </body>
-
 </html>

@@ -124,6 +124,7 @@
                           <div class="mb-3">
                               <label for="exampleFormControlInput1" class="form-label"></label>
                               <select class="form-select" aria-label="Default select example" required name="bacsession">
+                                  <option value="">-- Session du BAC --</option>
                                   <option value="2018-2019">2018-2019</option>
                                   <option value="2019-2020">2019-2020</option>
                                   <option value="2020-2021">2020-2021</option>

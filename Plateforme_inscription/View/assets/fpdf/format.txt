@@ -1,0 +1,22 @@
+DELIMITER $$
+
+CREATE TRIGGER contenu_after_delete
+AFTER DELETE
+   ON contenu FOR EACH ROW
+BEGIN
+   -- Insert record into audit table
+   INSERT INTO supptable
+   ( idcontent,
+     titre,
+   	 description,
+   	 niveau)
+   VALUES
+   ( OLD.idcontent,
+     old.titre,
+     old.description,
+     old.niveau)
+END 
+
+DELIMITER $$
+
+

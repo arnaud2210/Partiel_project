@@ -155,7 +155,7 @@
                                     <div class="modal-content">
                                         <div class="modal-body">
                                             <div class="container">
-                                                <p>Ces informations sont-ils correctes? Si oui, cliquer sur continuer</p>
+                                                <p>Ces informations sont-elles correctes? Si oui, cliquer sur continuer</p>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
@@ -169,7 +169,7 @@
                           </div>
                         </form>
                     </div>
-                  </div>   
+                </div>   
           </div>
         </section>
         <script src="assets/js/bootstrap.bundle.min.js"></script>

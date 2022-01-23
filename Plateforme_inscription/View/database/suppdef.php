@@ -6,4 +6,4 @@ $insert2 = $db->prepare('delete from supptable where idcontent = ?') or die($bdd
 
 $insert2->execute(array($_GET['idcontent']));
 
-header('location:../Posts.php');
+header('location:../suppression.php');
